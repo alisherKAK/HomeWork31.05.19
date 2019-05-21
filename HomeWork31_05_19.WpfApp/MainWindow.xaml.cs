@@ -24,5 +24,15 @@ namespace HomeWork31_05_19.WpfApp
         {
             InitializeComponent();
         }
+
+        private void DarkThemeButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.Resources = new ResourceDictionary() { Source = new Uri("pack://application:,,,/DarkTheme.xaml") };
+        }
+
+        private void LightThemeButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.Resources = new ResourceDictionary() { Source = new Uri("pack://application:,,,/LightTheme.xaml") };
+        }
     }
 }

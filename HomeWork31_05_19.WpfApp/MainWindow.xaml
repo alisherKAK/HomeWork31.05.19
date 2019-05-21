@@ -5,8 +5,71 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HomeWork31_05_19.WpfApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="807.013">
+    <Window.Resources>
+        <ResourceDictionary Source="LightTheme.xaml"/>
+    </Window.Resources>
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="40*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal" Background="#FF0E97CB">
+                <TextBlock Margin="40,14,0,13" Text="Telegram" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold" Foreground="White"/>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="60,16,0,0" TextWrapping="Wrap" Text="Труп last seen 200 years ago" VerticalAlignment="Top" Foreground="White"/>
+                <StackPanel Margin="450 10 0 0">
+                    <Ellipse Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="10" Stroke="Black" VerticalAlignment="Top" Width="10"/>
+                    <Ellipse Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="10" Stroke="Black" VerticalAlignment="Top" Width="10"/>
+                    <Ellipse Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="10" Stroke="Black" VerticalAlignment="Top" Width="10"/>
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
+        <StackPanel Grid.Row="1" Margin="40,32,0,0">
+            <Label Content="Дядь"/>
+            <Label Content="Хранитель бездны"/>
+            <Label Content="Рандомный чел"/>
+            <Label Content="Леголас"/>
+            <Label Content="Труп"/>
+            <Label Content="Сосед"/>
+        </StackPanel>
+        <!--<ListBox HorizontalAlignment="Left" Height="309" Grid.Row="1" VerticalAlignment="Top" Width="160" Margin="0,32,0,0">
+            <Label Content="Дядь"/>
+            <Label Content="Хранитель бездны"/>
+            <Label Content="Рандомный чел"/>
+            <Label Content="Леголас"/>
+            <Label Content="Труп"/>
+            <Label Content="Сосед"/>
+        </ListBox>-->
+        <TextBox HorizontalAlignment="Left" Height="22" Grid.Row="1" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="140" Margin="10,5,0,0" Foreground="#FF515151"/>
+        <TextBox Grid.Column="1" Grid.Row="1" Text="Write a message..." Margin="75,328,139,14" Foreground="#FFACACAC"/>
+        <Button Content="Send" Grid.Column="1" HorizontalAlignment="Left" Margin="500,328,0,0" Grid.Row="1" VerticalAlignment="Top" Width="67" Height="30" FontWeight="Bold"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="265,268,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Friday, April 26, 2019" VerticalAlignment="Top"/>
+        <Button Content="Light" HorizontalAlignment="Left" Margin="10,346,0,0" Grid.Row="1" VerticalAlignment="Top" Width="54" Click="LightThemeButtonClick"/>
+        <Button Content="Dark" HorizontalAlignment="Left" Margin="85,346,0,0" Grid.Row="1" VerticalAlignment="Top" Width="54" Click="DarkThemeButtonClick"/>
+        <Ellipse Margin="10,32,125,315" Grid.Row="1">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="https://www.w3schools.com/w3css/img_lights.jpg"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse Margin="10,57,125,290" Grid.Row="1">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="https://vignette.wikia.nocookie.net/vampirediaries/images/4/4d/Devil.jpg/revision/latest?cb=20130508215710"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Separator HorizontalAlignment="Left" Height="40" Margin="-24,165,0,0" Grid.Row="1" VerticalAlignment="Top" Width="370" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
     </Grid>
 </Window>
