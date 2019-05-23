@@ -19,7 +19,7 @@
             <ColumnDefinition Width="20*"/>
         </Grid.ColumnDefinitions>
         <DockPanel Grid.ColumnSpan="2">
-            <StackPanel Orientation="Horizontal" Background="#FF0E97CB">
+            <StackPanel Orientation="Horizontal">
                 <TextBlock Margin="40,14,0,13" Text="Telegram" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold" Foreground="White"/>
                 <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="60,16,0,0" TextWrapping="Wrap" Text="Труп last seen 200 years ago" VerticalAlignment="Top" Foreground="White"/>
                 <StackPanel Margin="450 10 0 0">
@@ -29,14 +29,6 @@
                 </StackPanel>
             </StackPanel>
         </DockPanel>
-        <StackPanel Grid.Row="1" Margin="40,32,0,0">
-            <Label Content="Дядь"/>
-            <Label Content="Хранитель бездны"/>
-            <Label Content="Рандомный чел"/>
-            <Label Content="Леголас"/>
-            <Label Content="Труп"/>
-            <Label Content="Сосед"/>
-        </StackPanel>
         <!--<ListBox HorizontalAlignment="Left" Height="309" Grid.Row="1" VerticalAlignment="Top" Width="160" Margin="0,32,0,0">
             <Label Content="Дядь"/>
             <Label Content="Хранитель бездны"/>
@@ -45,22 +37,49 @@
             <Label Content="Труп"/>
             <Label Content="Сосед"/>
         </ListBox>-->
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="27*"/>
+                <RowDefinition Height="33*"/>
+                <RowDefinition Height="33*"/>
+                <RowDefinition Height="33*"/>
+                <RowDefinition Height="33*"/>
+                <RowDefinition Height="75*"/>
+            </Grid.RowDefinitions>
+            <Ellipse Margin="10,10,116,10" Grid.Row="1">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="https://www.w3schools.com/w3css/img_lights.jpg"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <TextBlock Grid.Row="1" Margin="49,10,5,10"><Run Text="Мой сосед"/><LineBreak/><Run Text="joined Telegram"/></TextBlock>
+
+            <Ellipse Margin="10,10,116,10" Grid.Row="2">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="http://www.nokiaplanet.com/uploads/posts/2013-02/1360686501_purple-sea-480x800.jpg"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <TextBlock Grid.Row="2" Margin="49,10,5,10"><Run Text="Добрый друг"/><LineBreak/><Run Text="joined Telegram"/></TextBlock>
+
+            <Ellipse Margin="10,10,116,10" Grid.Row="3">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="https://avatarko.ru/img/kartinka/2/cherep_kapyushon_uzhasy_1606.jpg"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <TextBlock Grid.Row="3" Margin="49,10,5,10"><Run Text="Сама смерть"/><LineBreak/><Run Text="joined Telegram"/></TextBlock>
+
+            <Ellipse Margin="10,10,116,10" Grid.Row="4">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="http://d2me0fuzw8a1c5.cloudfront.net/sites/default/files/styles/large/public/images/22922/avstriya_2.jpg"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <TextBlock Grid.Row="4" Margin="49,10,5,10"><Run Text="Курильщик"/><LineBreak/><Run Text="joined Telegram"/></TextBlock>
+        </Grid>
         <TextBox HorizontalAlignment="Left" Height="22" Grid.Row="1" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="140" Margin="10,5,0,0" Foreground="#FF515151"/>
         <TextBox Grid.Column="1" Grid.Row="1" Text="Write a message..." Margin="75,328,139,14" Foreground="#FFACACAC"/>
         <Button Content="Send" Grid.Column="1" HorizontalAlignment="Left" Margin="500,328,0,0" Grid.Row="1" VerticalAlignment="Top" Width="67" Height="30" FontWeight="Bold"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="265,268,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Friday, April 26, 2019" VerticalAlignment="Top"/>
-        <Button Content="Light" HorizontalAlignment="Left" Margin="10,346,0,0" Grid.Row="1" VerticalAlignment="Top" Width="54" Click="LightThemeButtonClick"/>
-        <Button Content="Dark" HorizontalAlignment="Left" Margin="85,346,0,0" Grid.Row="1" VerticalAlignment="Top" Width="54" Click="DarkThemeButtonClick"/>
-        <Ellipse Margin="10,32,125,315" Grid.Row="1">
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="https://www.w3schools.com/w3css/img_lights.jpg"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse Margin="10,57,125,290" Grid.Row="1">
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="https://vignette.wikia.nocookie.net/vampirediaries/images/4/4d/Devil.jpg/revision/latest?cb=20130508215710"/>
-            </Ellipse.Fill>
-        </Ellipse>
+        <Button Content="Light" HorizontalAlignment="Left" Margin="10,342,0,0" Grid.Row="1" VerticalAlignment="Top" Width="54" Click="LightThemeButtonClick"/>
+        <Button Content="Dark" HorizontalAlignment="Left" Margin="85,342,0,0" Grid.Row="1" VerticalAlignment="Top" Width="54" Click="DarkThemeButtonClick"/>
         <Separator HorizontalAlignment="Left" Height="40" Margin="-24,165,0,0" Grid.Row="1" VerticalAlignment="Top" Width="370" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
             <Separator.RenderTransform>
                 <TransformGroup>
