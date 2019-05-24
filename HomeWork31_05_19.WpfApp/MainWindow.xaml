@@ -29,14 +29,6 @@
                 </StackPanel>
             </StackPanel>
         </DockPanel>
-        <!--<ListBox HorizontalAlignment="Left" Height="309" Grid.Row="1" VerticalAlignment="Top" Width="160" Margin="0,32,0,0">
-            <Label Content="Дядь"/>
-            <Label Content="Хранитель бездны"/>
-            <Label Content="Рандомный чел"/>
-            <Label Content="Леголас"/>
-            <Label Content="Труп"/>
-            <Label Content="Сосед"/>
-        </ListBox>-->
         <Grid Grid.Column="0" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="27*"/>
